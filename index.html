@@ -18,11 +18,30 @@
     </head>
 
     <body>
-        <header>
-            <h1 style="text-align:center;font-family:courier;">
-                Terrence Sylvester
-            </h1>
-        </header>
+        <!-- Static Navigation Bar -->
+        <!-- add links to page sections -->
+    <section class="topbar">
+        <section class="name">
+          <a href="#">Terrence Sylvester</a>
+        </section>
+        <section class="menu">
+            <a href="#Research">Research</a>
+            <a href="#Edu">Education and Experience</a>
+            <a href="#Pubs">Publications</a>
+            <a href="#contact">Contact</a>
+        </section>
+    </section>
+
+    <!-- Cover Section -->
+    <section class="cover">
+        <img src="assets/images/profile/profile-img.jpg" alt="Your Photo" class="profile-photo">
+    </section>
+    
+    <section>
+        <h1 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Terrence Sylvester            
+        </h1>
+
         <p style="text-align:center;">
             <span>&#8226;</span> Posdoctoral resercher (University of Memphis)
             <span>&#8226;</span> PhD (Texas A&M University)
@@ -32,16 +51,18 @@
             <a href="assets/pubs/CV.pdf">CV</a>
         </p>
         
-        <!-- add links to page sections -->
-        <nav style="text-align:center;">
+<!-- old code can be removed -->
+        <!-- <nav style="text-align:center;">
             <a href="#Research" ><span>&#8226;</span> Research </a>
             <a href="#Edu" ><span>&#8226;</span> Education and Experience </a>
             <a href="#Pubs" ><span>&#8226;</span> Publications </a>
         </nav>
-        <hr>
+        <hr> -->
+
+    </section>
 
         <!-- add icons and links to other profiles -->
-         <section id="profiles" style="text-align:center">
+         <section id="profiles" style="text-align:center" class="section">
             <!-- github -->
              <a href="https://github.com/Tsylvester8">
                 <i class="fa-brands fa-github-square"></i>
@@ -60,21 +81,21 @@
             </a>
          </section>
          
-        <section id="Research">
+        <section id="Research" class="section">
             <h1>
                 Research
             </h1>
-            <h2>
+            <br>
+            <h3>
                 Evolution of chromosome number
-            </h2>
+            </h3>
             <p>
                 Genome structure, at a fundamental level, can be described by the division of the genome into a discrete number of chromosomes and further divided into autosomes and sex chromosomes. An array of mechanisms or selection pressures can lead to changes in both of these characteristics of genomes. Meiotic drive, segregation mechanisms, sexual antagonism, epistasis, benefits of higher or lower recombination, and drift have all been invoked to explain changes in the number of chromosomes and the proportion of the genome that is sex linked through sex chromosomes. Despite over a century of work, this level of genome organization has been resistant to broad generalizations that can explain the striking variation we observe among species. I will use large comparative phylogenetic approaches to determine the degree to which rates of chromosome number and sex chromosome system evolution vary among orders of insects. I will also use these approaches to infer whether mutations that have led to divergence in chromosome number are deleterious, neutral, or beneficial.
             </p>
-
-    
-            <h2>
+            <br>
+            <h3>
                 Population genetics of Chrysina gloriosa
-            </h2>
+            </h3>
             <p>
                 As climate changes many species develop discontinuous distributions. When a species is separated into many isolated demes the risk of local extinction increases. Chrysina gloriosa is a jewel scarab restricted to high elevations in west Texas, southern New Mexico, and southern Arizona where it feeds on several species of trees in the Juniperus genus. This beetle is highly sought after by collectors and is one of the most charismatic insects in North America. Despite this there is currently no population genetic data that would allow for estimates of the health or resiliency of populations. Using population genomic data, I will determine the degree of gene flow among populations of the scarab jewel beetle Chrysina gloriosa across the southwestern United States and determine the landscape characteristics that best predict isolation of demes.
             </p>
@@ -86,48 +107,46 @@
             <hr>
         </section>
 
-        <section id="Edu">
+        <section id="Edu" class="section">
             
-            <h1>
-                Education and Experience
-            </h1>
-            <!-- Postdoc -->
             <h2>
-                Posdoctoral resercher (2022 - present)
+                Education and Experience
             </h2>
+            <br>
+            <!-- Postdoc -->
+            <h3>
+                Posdoctoral resercher (2022 - present)
+            </h3>
             <p>
                 The University of Memphis, Memphis, TN, USA
-            </p>
-            <p>
+                <br>
                 Advised by: <a href="https://www.duanemckenna.com/">Dr Duane McKenna</a> 
             </p>
+            <br>
 
             <!-- PhD -->
-            <h2>
+            <h3>
                 PhD in Biology (2017 - 2022)
-            </h2>
+            </h3>
             <p>
-                Texas A and M University, College Station, TX, USA <br>
-            </p>
-            <p>
-                Doctoral dissertation: Broad-scale structural evolution in invertebrate genomes and the population genomics of jewel scarabs in the southwestern US.  
-            </p>
-            <p>
+                Texas A and M University, College Station, TX, USA 
+                <br>
+                Doctoral dissertation: Broad-scale structural evolution in invertebrate genomes and the population genomics of jewel scarabs in the southwestern US.
+                <br>
                 Advised by: <a href="https://coleoguy.github.io/">Dr Heath Blackmon</a> 
             </p>
+            <br>
 
             <!-- BSc -->
-            <h2>
-                Bsc in Molecular Biology and Biotechnology (2011 - 2015)
-            </h2>
+            <h3>
+                BSc in Molecular Biology and Biotechnology (2011 - 2015)
+            </h3>
             <p>
                 University of Peradeniya, Peradeniya, Sri Lanka
-            </p>
-            <p>
-                Thesis title: Phylogenetic relationships and species boundaries of a clade of diminutive shrub frogs (Rhacophoridae: Pseudophilautus).  
-            </p>
-            <p>
-                Advised by: <a href="https://www.linkedin.com/in/madhava-meegaskumbura-53844b15a/">Dr Madhava Meegaskumbura                </a> 
+                <br>
+                Thesis title: Phylogenetic relationships and species boundaries of a clade of diminutive shrub frogs (Rhacophoridae: Pseudophilautus).
+                <br>
+                Advised by: <a href="https://www.linkedin.com/in/madhava-meegaskumbura-53844b15a/">Dr Madhava Meegaskumbura</a>
             </p>
             <!-- back to top -->
             <a href="#">
@@ -137,17 +156,18 @@
             <hr>
         </section>
         
-        <section id="Pubs">
+        <section id="Pubs" class="section">
             <h1>
                 Publications
             </h1>
+            <br>
             <h4>2025</h4>
             <p>
                 Lian, Q., Lu, Y., Xu, M., Huang, C., Ding, Q., Yang, X., <b>Sylvester, T.</b>, Shen, R., Miao, P. and Bai, M., 2025. Three mitochondrial genomes of Kibakoganea Nagai, 1984 (Coleoptera: Scarabaeidae: Rutelinae) and phylogenetic relationship of Rutelini. Journal of Asia-Pacific Entomology, p.102369.
             </p>
             <h4>2024</h4>
             <p>
-                Copeland, M., Landa, S., Owoyemi, A.O., Jonika, M.M., Alfieri, J.M., Johnston, J.S., Sylvester, T.P., Kyre, B.R., Hoover, Z., Hjelmen, C.E. and Rieske, L.K., 2024. Genome assembly of the southern pine beetle (Dendroctonus frontalis Zimmerman) reveals the origins of gene content reduction in Dendroctonus. Royal Society Open Science, 11(12), p.240755.
+                Copeland, M., Landa, S., Owoyemi, A.O., Jonika, M.M., Alfieri, J.M., Johnston, J.S., <b>Sylvester, T.P.</b>, Kyre, B.R., Hoover, Z., Hjelmen, C.E. and Rieske, L.K., 2024. Genome assembly of the southern pine beetle (Dendroctonus frontalis Zimmerman) reveals the origins of gene content reduction in Dendroctonus. Royal Society Open Science, 11(12), p.240755.
             </p>
             <p>
                 Adams, R., <b>Sylvester, T.</b>, Mitchell, R.F., Price, M.A., Shen, R. and McKenna, D.D., 2024. Functional and evolutionary insights into chemosensation and specialized herbivory from the genome of the red milkweed beetle, Tetraopes tetrophthalmus (Cerambycidae: Lamiinae). Journal of Heredity, p.esae049.
@@ -191,6 +211,15 @@
                 Back to top
             </a>
         </section>
+
+        <!-- contact -->
+         <section id="contact" class="section">
+            <h1>
+                Contact
+            </h1>
+            <p>Email:tpsylvst@memphis.edu</p>
+
+         </section>
         
     </body>
 
