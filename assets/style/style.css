@@ -29,7 +29,9 @@ p {
 .topbar {
     width: 100%;
     height: 60px;
-    background: #198ce9;
+    background: #198be969;
+    backdrop-filter: blur(10px) ;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     color: white;
     display: flex;
     align-items: center;
@@ -108,15 +110,20 @@ p {
 
 /* set section margins (top right bottom left i think) */
 .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 1% 10% 1% 10%;
     /* padding: 1%; */
-    padding: 80px 20px;
+    padding: 80px;
 }
 
 /* for social media links define section boundaries and add a mouse hover animation*/
 .social {
-    margin: 0% 10% 0% 10%;
-    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
 }
 
 /* add a transition to links at mouse hoovers */
