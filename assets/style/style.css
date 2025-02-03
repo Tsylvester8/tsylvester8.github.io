@@ -71,8 +71,8 @@ p {
     justify-content: center;
 }
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 5px solid rgb(0, 0, 0);
     object-fit: cover;
