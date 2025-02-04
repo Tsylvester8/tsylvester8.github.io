@@ -113,9 +113,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: solid black; */
     margin: 1% 10% 1% 10%;
     /* padding: 1%; */
-    padding: 80px;
+    /* padding: 80px; */
 }
 
 /* for social media links define section boundaries and add a mouse hover animation*/
@@ -163,6 +164,7 @@ p {
 /* make movement within the html page smooth */
 html {
     scroll-behavior: smooth;
+    scroll-padding: 70px;
 }
 
 
