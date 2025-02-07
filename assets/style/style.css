@@ -27,7 +27,7 @@ p {
 
 /* add small space to the bottom of the lists and list items */
 ul {
-    padding-bottom: 4%;
+    padding-bottom: 20px;
 }
 
 li {
