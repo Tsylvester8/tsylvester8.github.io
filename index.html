@@ -32,12 +32,34 @@
         </section>
     </section>
 
+    <section class="mobileNavBar" id="myTopnav">
+        <a href="#" class="active">Terrence Sylvester</a>
+        <a href="#Research">Research</a>
+        <a href="#Edu">Education and Experience</a>
+        <a href="#Pubs">Publications</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </section>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "mobileNavBar") {
+            x.className += " responsive";
+          } else {
+            x.className = "mobileNavBar";
+          }
+        }
+        </script>
+
     <!-- Cover Section -->
     <section class="cover">
         <img src="assets/images/profile/profile-img.jpg" alt="Your Photo" class="profile-photo">
     </section>
     
-    <section>
+    <section style="margin: 1% 10% 1% 10%;">
         <h1 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             Terrence Sylvester            
         </h1>
