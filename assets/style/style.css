@@ -11,19 +11,18 @@ and for each category (links, body text) */
 /* change some elements of the body (colour, font style and font size) */
 body {
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 
 /* add some space between icons */
-  i {
+i {
     padding: 5px;
-    }
+}
 
 /* add small space between paragaphs */
 p {
-    margin-bottom: 15px;
-  }
+    margin-bottom: 20px;
+}
 
 /* add small space to the bottom of the lists and list items */
 ul {
@@ -101,6 +100,39 @@ li {
     position: absolute;
 }
 
+/* for social media links define section boundaries and add a mouse hover animation*/
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 2% 10% 2% 10%;
+}
+
+/* add a transition to links at mouse hoovers */
+.social a {
+    text-decoration: none;
+    color: #149ddd;
+    transition: all 0.3s ease-in-out
+}
+
+.social p {
+    display: none;
+    font-size: small;
+}
+
+.social a:hover{
+    /* padding: 15px 25px; */
+    /* font-size: 40px; */
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+.social a:hover p{
+    display: block;
+    transition: transform 0.3s ease;
+}
+
 /* add styles to sections */
 /* remove underline that goes beyond the linked text and change colour of the links */
 .section a {
@@ -114,7 +146,7 @@ li {
     flex-direction: column;
     justify-content: center;
     /* border: solid black; */
-    margin: 1% 10% 1% 10%;
+    margin: 1% 20% 1% 20%;
     /* padding: 1%; */
     /* padding: 80px; */
 }
