@@ -4,10 +4,10 @@
         <!-- add meta data of the website -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-        <!-- add webpage title -->
         <title>Terrence Sylvester</title>
         <!-- link fontawesome icons -->
         <script src="https://kit.fontawesome.com/7742a774c7.js" crossorigin="anonymous"></script>
+        <script src="/assets/script/script.js"></script>
         <!-- add styles -->
         <link rel="stylesheet" href="assets/style/style.css">
         <!-- add favicons -->
@@ -18,8 +18,7 @@
     </head>
 
     <body>
-        <!-- Static Navigation Bar -->
-        <!-- add links to page sections -->
+        <!-- Navigation Bar -->
     <section class="topbar">
         <section class="name">
           <a href="#">Terrence Sylvester</a>
@@ -32,6 +31,7 @@
         </section>
     </section>
 
+        <!-- Mobile Navigation Bar -->
     <section class="mobileNavBar" id="myTopnav">
         <a href="#" class="active">Terrence Sylvester</a>
         <a href="#Research">Research</a>
@@ -43,22 +43,10 @@
           </a>
         </section>
 
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "mobileNavBar") {
-            x.className += " responsive";
-          } else {
-            x.className = "mobileNavBar";
-          }
-        }
-        </script>
-
     <!-- Cover Section -->
     <section class="cover">
-        <img src="assets/images/profile/profile-img.jpg" alt="Your Photo" class="profile-photo">
     </section>
-    
+
     <section style="margin: 1% 10% 1% 10%;">
         <h1 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             Terrence Sylvester            
@@ -69,18 +57,9 @@
             <span>&#8226;</span> PhD (Texas A&M University)
             <span>&#8226;</span> BSc (University of Peradeniya)
         </p>
-        <p style="text-align:center">
+        <p style="text-align:center;padding-bottom: 0px;">
             <a href="assets/pubs/CV.pdf">Curriculum vitae</a>
-        </p>
-        
-<!-- old code can be removed -->
-        <!-- <nav style="text-align:center;">
-            <a href="#Research" ><span>&#8226;</span> Research </a>
-            <a href="#Edu" ><span>&#8226;</span> Education and Experience </a>
-            <a href="#Pubs" ><span>&#8226;</span> Publications </a>
-        </nav>
-        <hr> -->
-
+        </p>    
     </section>
 
         <!-- add icons and links to other profiles -->
@@ -108,10 +87,12 @@
          </section>
 
          <section class="section">
-            <p>
-                <b>Welcome!</b> I am Terrence Sylvester, an evolutionary biologist investigating the intricate mechanisms of genome evolution using comparative and population genomics. I use phylogenetic comparative methods to study chromosome number evolution, genome assembly and comparative analysis to explore genome structure and gene content evolution, and population genetic data to understand how populations evolve. While my primary study system is beetles, I have also worked with amphibians, various insect groups—including lepidopterans, polyneopterans, and raphidiopterans—and, more recently, with some plants. Throug my work I aim to uncover the evolutionary forces shaping genomes and contribute to a deeper understanding of biodiversity and adaptation.
-            </p>
- 
+            <div style="margin: auto;">
+                <img src="assets/images/profile/profile-img.jpg" alt="Your Photo" class="profile-photo">
+                <p style="font-size: larger;">
+                    <b>Welcome!</b> I am Terrence Sylvester, an evolutionary biologist investigating the intricate mechanisms of genome evolution using comparative and population genomics. I use phylogenetic comparative methods to study chromosome number evolution, genome assembly and comparative analysis to explore genome structure and gene content evolution, and population genetic data to understand how populations evolve. While my primary study system is beetles, I have also worked with amphibians, various insect groups—including lepidopterans, polyneopterans, and raphidiopterans—and, more recently, with some plants. Throug my work I aim to uncover the evolutionary forces shaping genomes and contribute to a deeper understanding of biodiversity and adaptation.
+                </p>
+            </div> 
          </section>
          
         <section id="Research" class="section">
