@@ -3,19 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family:"Open Sans";
 }
 /* change some elements of the body (colour, font style and font size) */
 body {
     background-color: white;
-    font-size: 24px;
+    font-size: 15px;
 }
 /* add some space */
 i {
     padding: 5px;
 }
 p, ul, li {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 /* Top Navigation Bar */
 .topbar {
@@ -41,7 +41,7 @@ p, ul, li {
 .topbar a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     transition: color 0.3s;
 }
 .topbar a:hover {
@@ -73,7 +73,7 @@ p, ul, li {
 .profile-photo {
     width: 350px;
     height: 350px;
-    border: 5px solid rgb(0, 0, 0);
+    /* border: 5px solid rgb(0, 0, 0); */
     object-fit: cover;
     float: left;
     margin-right: 20px;
@@ -85,7 +85,7 @@ p, ul, li {
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    margin: 2% 10% 2% 10%;
+    /* margin: 2% 10% 2% 10%; */
 }
 /* add a transition to links at mouse hoovers */
 .social a {
@@ -135,6 +135,14 @@ p, ul, li {
     text-decoration: none;
     color: #149ddd;
 }
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1% 10% 1% 10%;
+}
+
 @media screen and (max-width: 768px) {
     .mobileNavBar a:not(:first-child) {
         display: none;}
@@ -199,27 +207,38 @@ p, ul, li {
         display: block;
         text-align: left;
     }
-    p {
-        font-size: 24px;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 5px;
+        margin: 1% 5% 1% 5%;
+    }
+
+    .intpar {
+        padding-top: 20px;
+    }
+
+    p, ul, li {
+        padding-bottom: 10px;
+        font-size: 15px;
     }
     .cover {
         height: 60vh;
     }
     .section {
-        padding: 0px 15px;
+        padding: 0px 5px;
         margin: 1% 5% 1% 5%;
     }
     .section h1 {
-        font-size: 30px;
+        font-size: 15px;
     }
     .section h2 {
-        font-size: 28px;
+        font-size: 15px;
     }
     .section h3 {
-        font-size: 26px;
-    }
-    li {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 /* make movement within the html page smooth */
