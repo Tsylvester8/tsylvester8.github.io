@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Terrence Sylvester</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/7742a774c7.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="../assets/styles/base.css">
+<link rel="stylesheet" href="../assets/styles/index.css">
+
+<style>
+.contact-container{
+  max-width:700px;
+  margin:60px auto;
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-container h2{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.contact-form label{
+  font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  font-family:'Open Sans';
+  font-size:16px;
+}
+
+.contact-form textarea{
+  min-height:160px;
+  resize:vertical;
+}
+
+.contact-form button{
+  margin-top:10px;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  background:#2c6cff;
+  color:white;
+  transition:0.2s;
+}
+
+.contact-form button:hover{
+  background:#1d4ed8;
+}
+
+.success-msg{
+  text-align:center;
+  display:none;
+  margin-top:20px;
+  color:green;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="identity">
+    <h1>Terrence Sylvester</h1>
+    <p>Postdoctoral Fellow | Evolution | Genomics | University of Memphis</p>
+  </div>
+</header>
+
+<nav class="pill-nav">
+  <a class="pill" href="../index.html">Home</a>
+  <a class="pill" href="research.html">Research</a>
+  <a class="pill" href="publications.html">Publications</a>
+  <a class="pill" href="cv.html">CV</a>
+  <a class="pill active" href="#">Contact</a>
+</nav>
+
+<main>
+  <section class="contact-container">
+    <h2>Send a Message</h2>
+
+    <!-- Replace email below with yours -->
+    <form class="contact-form"
+          action="https://formsubmit.co/tpsylvst@memphis.edu"
+          method="POST">
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_subject" value="New message from website">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div>
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div>
+        <label>Subject</label>
+        <input type="text" name="subject" required>
+      </div>
+
+      <div>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+      </div>
+
+      <button type="submit">Send Email</button>
+    </form>
+
+    <p class="success-msg">Message sent successfully.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="copyright">© 2026 Terrence Sylvester</p>
+</footer>
+
+</body>
+</html>

@@ -1,311 +1,364 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <!-- add meta data of the website -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-        <title>Terrence Sylvester</title>
-        <!-- link fontawesome icons -->
-        <script src="https://kit.fontawesome.com/7742a774c7.js" crossorigin="anonymous"></script>
-        <script src="/assets/script/script.js"></script>
-        <!-- add styles -->
-        <link rel="stylesheet" href="assets/style/style.css">
-        <!-- add favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrence Sylvester | Evolutionary Genomics</title>
 
-    <body>
-        <!-- Navigation Bar -->
-    <section class="topbar">
-        <section class="name">
-          <a href="#">Terrence Sylvester</a>
-        </section>
-        <section class="menu">
-            <a href="#Research">Research</a>
-            <a href="#Edu">Education and Experience</a>
-            <a href="#Pubs">Publications</a>
-            <a href="#contact">Contact</a>
-        </section>
-    </section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7742a774c7.js" crossorigin="anonymous"></script>
 
-        <!-- Mobile Navigation Bar -->
-    <section class="mobileNavBar" id="myTopnav">
-        <a href="#" class="active">Terrence Sylvester</a>
-        <a href="#Research">Research</a>
-        <a href="#Edu">Education and Experience</a>
-        <a href="#Pubs">Publications</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </section>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
-    <!-- Cover Section -->
-    <section class="cover">
-    </section>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+  </head>
 
-    <section style="margin: 1% 10% 1% 10%;">
-        <h1 style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-            Terrence Sylvester            
-        </h1>
+  <body> 
+    <header class="site-header">
+      <!-- LATER -->
+      <!-- light dark button -->
+      <!-- <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined light-icon">light_mode</span>
+        <span class="material-symbols-outlined dark-icon">dark_mode</span>
+      </button> -->
 
-        <p style="text-align:center;">
-            <span>&#8226;</span> Posdoctoral researcher (University of Memphis)
-            <span>&#8226;</span> PhD (Texas A&M University)
-            <span>&#8226;</span> BSc (University of Peradeniya)
-        </p>
-        <p style="text-align:center;padding-bottom: 0px;">
-            <a href="assets/pubs/CV.pdf">Curriculum vitae</a>
-        </p>    
-    </section>
+      <!-- Title -->
+      <div class="identity">
+        <h1>Terrence Sylvester</h1>
+        <p>Postdoctoral Fellow | Evolution | Genomics | University of Memphis </p>
+      </div>
 
-        <!-- add icons and links to other profiles -->
-         <section id="profiles" style="text-align:center" class="social">
-            <!-- github -->
-             <a href="https://github.com/Tsylvester8">
-                <i class="fa-brands fa-github-square"></i>
-                <p>Github</p>
-            </a> 
-            <!-- google scholar -->
-             <a href="https://scholar.google.com/citations?user=ReSUlxsAAAAJ&hl=en">
-                <i class="fa-brands fa-google-scholar"></i>
-                <p>Google Scholar</p>
-            </a>
-            <!-- linkedin -->
-             <a href="https://www.linkedin.com/in/terrence-sylvester-92b8899a/">
-                <i class="fa-brands fa-linkedin"></i>
-                <p>LinkedIn</p>
-            </a>
-            <!-- researchgate -->
-             <a href="https://www.researchgate.net/profile/Terrence_Sylvester2">
-                <i class="fa-brands fa-researchgate"></i>
-                <p>ResearchGate</p>
-            </a>
-         </section>
+      <nav class="mobile-nav">
+      <!-- add a hamburger icon -->
+      <button onclick=showSidebar() class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
-         <section class="intro">
-            <div style="margin: auto;">
-                <img src="assets/images/profile/profile-img.jpg" alt="Your Photo" class="profile-photo">
-            </div> 
-            <div class="intpar">
-                <p >
-                    I’m Terrence Sylvester, an evolutionary biologist interested in how genomes record and respond to ecological pressures. My research integrates genome assembly, phylogenetics, comparative genomics, and population genetics to investigate chromosome evolution, gene family dynamics, and the role of repetitive elements in shaping genome architecture. While much of my work centers on beetles—one of the most diverse and ecologically significant animal groups—I have also studied amphibians, other insect lineages, and plants. By linking genome evolution with adaptation, biodiversity, and conservation, I aim to reveal how genomic change contributes to resilience in a rapidly changing environment.
-                </p>
-            </div>
-         </section>
-         
-        <section id="Research" class="section">
-            <h1 style="margin-bottom: 10px;">
-                Research
-            </h1>
-            <p>My research explores how genomes respond to ecological pressures and environmental change. From the organization of chromosomes to the expansion of gene families and the persistence of populations, genomes record both the constraints and opportunities that shape biodiversity. By integrating comparative genomics, chromosome evolution, and population genomics, I aim to uncover the mechanisms that generate and maintain genetic diversity, while connecting broad evolutionary patterns to the survival of individual species.</p>
-            <h3>
-                Genome evolution
-            </h3>
-            <p>
-                I study the evolutionary forces that shape genomes across time and lineages. Using comparative genomics, I focus on repetitive sequences, horizontal gene transfer, and the expansion and contraction of gene families through duplication and loss. These features not only reveal the mechanisms driving genome evolution but also provide insight into how organisms adapt to their environments. My work combines large-scale phylogenetic approaches with detailed genomic analyses to uncover the processes that generate genetic diversity.
-            </p>
 
-            <h3>
-                Chromosome number evolution
-            </h3>
-            <p>
-                Genome structure, at a fundamental level, can be described by the division of the genome into a discrete number of chromosomes and further divided into autosomes and sex chromosomes. An array of mechanisms or selection pressures can lead to changes in both of these characteristics of genomes. Meiotic drive, segregation mechanisms, sexual antagonism, epistasis, benefits of higher or lower recombination, and drift have all been invoked to explain changes in the number of chromosomes and the proportion of the genome that is sex linked through sex chromosomes. Despite over a century of work, this level of genome organization has been resistant to broad generalizations that can explain the striking variation we observe among species. I will use large comparative phylogenetic approaches to determine the degree to which rates of chromosome number and sex chromosome system evolution vary among orders of insects. I will also use these approaches to infer whether mutations that have led to divergence in chromosome number are deleterious, neutral, or beneficial.
-            </p>
+    </header>
 
-            <h3>
-                Population genetics of Chrysina gloriosa
-            </h3>
-            <p>
-                As climate changes many species develop discontinuous distributions. When a species is separated into many isolated demes the risk of local extinction increases. Chrysina gloriosa is a jewel scarab restricted to high elevations in west Texas, southern New Mexico, and southern Arizona where it feeds on several species of trees in the Juniperus genus. This beetle is highly sought after by collectors and is one of the most charismatic insects in North America. Despite this there is currently no population genetic data that would allow for estimates of the health or resiliency of populations. Using population genomic data, I will determine the degree of gene flow among populations of the scarab jewel beetle Chrysina gloriosa across the southwestern United States and determine the landscape characteristics that best predict isolation of demes.
-            </p>
+    <!-- Navigation -->
+    <nav class="pill-nav">
+      <a class="pill active" href="#">Home</a>
+      <!-- <a class="pill" href="#bio">Bio</a> -->
+      <a class="pill" href="pages/research.html">Research</a>
+      <a class="pill" href="pages/publications.html">Publications</a>
+      <!-- <a class="pill" href="#education">Experience</a> -->
+      <a class="pill" href="pages/cv.html">CV</a>
+      <a class="pill" href="#contact">Contact</a>
+      <button onclick=hideSidebar() class="pill close" aria-label="Toggle navigation">
+        <i class="fas fa-times"></i>
+      </button>
+    </nav>
 
-            <p>Together, these projects bridge scales of biological organization, from single genes to whole populations, revealing how genome evolution both shapes and is shaped by ecological pressures and environmental change.</p>
+    <main class="container">
+      <!-- BIO -->
+      <section id="bio" class="bio">
+        <img src="/assets/images/profile-img.jpg" alt="Portrait" />
+        <h2>About Me</h2>
+        <p>and evolutionary pressures. My research integrates genome assembly, phylogenomics, comparative genomics, and population genetics to investigate chromosome evolution, gene family dynamics, and the influence of repetitive DNA on genome architecture. Although much of my work centers on beetles—one of the most diverse and ecologically significant animal groups—I have also worked on amphibians, other insect lineages, and plants. By linking genome evolution with adaptation, biodiversity, and conservation, my research seeks to clarify how genomic change contributes to resilience in rapidly changing environments.</p>
+      </section>
 
-        </section>
-
-        <section id="Edu" class="section">
-            <h1 style="margin-bottom: 10px;">
-                Education and Experience
-            </h1>
-
-            <!-- Postdoc -->
-            <h3>
-                Posdoctoral resercher (2022 - present)
-            </h3>
-            <p>
-                The University of Memphis, Memphis, TN, USA
-                <br>
-                Advised by: <a href="https://www.duanemckenna.com/">Dr Duane McKenna</a> 
-            </p>
-            
-            <!-- PhD -->
-            <h3>
-                PhD in Biology (2017 - 2022)
-            </h3>
-            <p>
-                Texas A&M University, College Station, TX, USA 
-                <br>
-                Doctoral dissertation: Broad-scale structural evolution in invertebrate genomes and the population genomics of jewel scarabs in the southwestern US.
-                <br>
-                Advised by: <a href="https://coleoguy.github.io/">Dr Heath Blackmon</a> 
-            </p>
-
-            <!-- BSc -->
-            <h3>
-                BSc in Molecular Biology and Biotechnology (2011 - 2015)
-            </h3>
-            <p>
-                University of Peradeniya, Peradeniya, Sri Lanka
-                <br>
-                Thesis title: Phylogenetic relationships and species boundaries of a clade of diminutive shrub frogs (Rhacophoridae: Pseudophilautus).
-                <br>
-                Advised by: <a href="https://www.linkedin.com/in/madhava-meegaskumbura-53844b15a/">Dr Madhava Meegaskumbura</a>
-            </p>
-            <!-- back to top -->
-        </section>
+      <!-- Research -->
+      <section id="research" class="research">
+        <h2>Research</h2>
+        <p>My research examines the genomic mechanisms that drive lineage diversification and adaptation. I focus on gene family evolution, chromosomal rearrangements, and the role of transposable elements and other repetitive sequences in shaping genome structure and function. Using integrative comparative and phylogenomic approaches, I investigate the genomic basis of adaptation across diverse taxa, with an emphasis on beetles and other ecologically important organisms.</p>
+        <a href="pages/research.html" class="btn">Learn More →</a>
+      </section>
+      
+      <!-- Education -->
+      <!-- <section id="education" class="education">
+        <h2>Education & Experience</h2>
+          <ul>
+            <li><strong>Postdoctoral Fellow:</strong> University of Memphis (2022–Present)</li>
+            <li><strong>PhD in Biology:</strong> Texas A&M University (2017–2022)</li>
+            <li><strong>BSc in Molecular Biology:</strong> University of Peradeniya, Sri Lanka (2011–2015)</li>
+          </ul>
+      </section>     -->
         
-        <section id="Pubs" class="section">
-            <h1 style="margin-bottom: 10px;">
-                Publications
-            </h1>
+<section id="education" class="education">
+  <h2>Education & Experience</h2>
 
-            <div class="pub-year">
-                <button class="collapsible active-year">2025</button>
-                <div class="content" style="display: block;">
-                    <ul>
-                <li>Shen, R., <b>Sylvester, T.</b>, Ding, Q., Yang, X., Tong, Y., Liu, N., Wang, C., Xiao, Y., Huang, C., Wu, S. and Bai, M., 2025. Chromosome-level genome of the shining chafers Kibakoganea tamdaoensis (Coleoptera: Scarabaeidae: Rutelinae). Scientific Data, 12(1), p.1345. <a href="https://www.nature.com/articles/s41597-025-05657-7" target="_blank" rel="noopener noreferrer">link</a></li>
-                
-                <li><b>Sylvester, T.</b>, Adams, R., Mitchell, R.F., Ray, A.M., Shen, R., Shin, N.R., Daundasekara, K.C. and McKenna, D.D., 2025. Insights into longhorn beetle (Cerambycidae) evolution from comparative analyses of the red-headed ash borer (Neoclytus acuminatus acuminatus) genome. Journal of Heredity, p.esaf016. <a href="https://academic.oup.com/jhered/article/116/4/558/8090467" target="_blank" rel="noopener noreferrer">link</a></li>
+  <!-- Timeline Container -->
+  <div class="timeline">
+    <div class="timeline-item" onclick="toggleInfo('postdoc')">
+      <div class="timeline-icon"></div>
+      <div class="timeline-year">2022–Present</div>
+      <div class="timeline-title">Postdoctoral Fellow</div>
+    </div>
 
-                <li>Lian, Q., Lu, Y., Xu, M., Huang, C., Ding, Q., Yang, X., <b>Sylvester, T.</b>, Shen, R., Miao, P. and Bai, M., 2025. Three mitochondrial genomes of Kibakoganea Nagai, 1984 (Coleoptera: Scarabaeidae: Rutelinae) and phylogenetic relationship of Rutelini. Journal of Asia-Pacific Entomology, p.102369. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1226861524001742?via%3Dihub" target="_blank" rel="noopener noreferrer">link</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="pub-year">
-                <button class="collapsible">2024</button>
-                <div class="content">
-                    <ul>
-                <li>Copeland, M., Landa, S., Owoyemi, A.O., Jonika, M.M., Alfieri, J.M., Johnston, J.S., <b>Sylvester, T.P.</b>, Kyre, B.R., Hoover, Z., Hjelmen, C.E. and Rieske, L.K., 2024. Genome assembly of the southern pine beetle (Dendroctonus frontalis Zimmerman) reveals the origins of gene content reduction in Dendroctonus. Royal Society Open Science, 11(12), p.240755. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.240755" target="_blank" rel="noopener noreferrer">open access</a></li>
-                
-                <li>Adams, R., <b>Sylvester, T.</b>, Mitchell, R.F., Price, M.A., Shen, R. and McKenna, D.D., 2024. Functional and evolutionary insights into chemosensation and specialized herbivory from the genome of the red milkweed beetle, Tetraopes tetrophthalmus (Cerambycidae: Lamiinae). Journal of Heredity, p.esae049. <a href="https://academic.oup.com/jhered/advance-article-abstract/doi/10.1093/jhered/esae049/7745656" target="_blank" rel="noopener noreferrer">link</a></li>
-                
-                <li><b>Sylvester, T.</b>, Hoover, Z., Hjelmen, C.E., Jonika, M.M., Blackmon, L.T., Alfieri, J.M., Johnston, J.S., Chien, S., Esfandani, T. and Blackmon, H., 2024. A reference quality genome assembly for the jewel scarab Chrysina gloriosa. G3 Genes| Genomes| Genetics, 14(6). <a href="https://academic.oup.com/g3journal/article/14/6/jkae084/7648819" target="_blank" rel="noopener noreferrer">open access</a></li>
-                
-                <li>Shen, R., <b>Sylvester, T.</b>, Shin, N.R., Zhan, Z., Jin, J., Yang, D., McKenna, D.D. and Liu, X., 2024. Chromosome-level genome assembly of the snakefly Mongoloraphidia duomilia (Raphidioptera: Raphidiidae). Scientific Data, 11(1), p.579. <a href="https://www.nature.com/articles/s41597-024-03439-1" target="_blank" rel="noopener noreferrer">open access</a></li>
-                
-                <li><b>Sylvester, T.</b>, Adams, R., Mitchell, R.F., Ray, A.M., Shen, R., Shin, N.R. and McKenna, D.D., 2024. Comparative analyses of the banded alder borer (Rosalia funebris) and Asian longhorned beetle (Anoplophora glabripennis) genomes reveal significant differences in genome architecture and gene content among these and other Cerambycidae. Journal of Heredity, p.esae021. <a href="https://academic.oup.com/jhered/article-abstract/115/5/516/7637438" target="_blank" rel="noopener noreferrer">link</a></li>
+    <div class="timeline-item" onclick="toggleInfo('phd')">
+      <div class="timeline-icon"></div>
+      <div class="timeline-year">2017–2022</div>
+      <div class="timeline-title">PhD in Biology</div>
+    </div>
 
-                <li><b>Sylvester, T.</b>, Adams, R., Hunter, W.B., Li, X., Rivera-Marchand, B., Shen, R., Shin, N.R. and McKenna, D.D., 2024. The genome of the invasive and broadly polyphagous Diaprepes root weevil, Diaprepes abbreviatus (Coleoptera), reveals an arsenal of putative polysaccharide-degrading enzymes. Journal of Heredity, 115(1), pp.94-102. <a href="https://academic.oup.com/jhered/article/115/1/94/7329554" target="_blank" rel="noopener noreferrer">link</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="timeline-item" onclick="toggleInfo('bsc')">
+      <div class="timeline-icon"></div>
+      <div class="timeline-year">2011–2015</div>
+      <div class="timeline-title">BSc in Molecular Biology</div>
+    </div>
+  </div>
 
-            <div class="pub-year">
-                <button class="collapsible">2022</button>
-                <div class="content">
-                    <ul>
-                <li><b>Sylvester, T. P.</b> (2022). Broad-Scale Structural Evolution in Invertebrate Genomes and the Population Genomics of Jewel Scarabs in the Southwestern US (Doctoral dissertation, Texas A&M University). <a href="" target="_blank" rel="noopener noreferrer">link</a></li>
-                
-                <li>Jonika, M. M., Alfieri, J. M.,<b> Sylvester, T.</b>, Buhrow, A. R., & Blackmon, H. (2022). Why not Y naught. Heredity, 1-4. <a href="https://www.nature.com/articles/s41437-022-00543-z" target="_blank" rel="noopener noreferrer">open access</a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- More Information for Postdoc -->
+  <div id="postdoc" class="timeline-info">
+    <button class="close-btn" onclick="closeInfo('postdoc')">X</button>
+    <p><strong>Postdoctoral Fellow:</strong> University of Memphis (2022–Present).</p>
+    <p>Supervisor: Duane McKenna</p>
+    <ul>
+      <li>Research on genomic evolution in long horn beetles (Cerambycidae).</li>
+      <li>Mentoring 2 graduate students in bioinformatics techniques.</li>
+    </ul>
+  </div>
 
-            <div class="pub-year">
-                <button class="collapsible">2020</button>
-                <div class="content">
-                    <ul>
-                <li><b>Sylvester, T.</b>, Hjelmen, C.E., Hanrahan, S.J., Lenhart, P.A., Johnston, J.S. and Blackmon, H., 2020. Lineage-specific patterns of chromosome evolution are the rule not the exception in Polyneoptera insects. Proceedings of the Royal Society B, 287(1935), p.20201388. <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2020.1388" target="_blank" rel="noopener noreferrer">open access</a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- More Information for PhD -->
+  <div id="phd" class="timeline-info">
+    <button class="close-btn" onclick="closeInfo('phd')">X</button>
+    <p><strong>PhD in Biology:</strong> Texas A&M University (2017–2022)</p>
+    <p>Supervisor: Heath Blackmon</p>
+    <ul>
+      <li>Dissertation: Broad-scale structural evolution in invertebrate genomes and the population genomics of jewel
+scarabs in the southwestern US.</li>
+      <!-- <li>Published 3 papers on molecular genetics in peer-reviewed journals.</li> -->
+    </ul>
+  </div>
 
-            <div class="pub-year">
-                <button class="collapsible">2017</button>
-                <div class="content">
-                    <ul>
-                <li>Sendanayake, L., <b>Sylvester, T.</b>, De Silva, U.H.A.J., Dissanayake, D.R.R.P., Daundasekera, D.M.K.C. and Sooriyapathirana, S.D.S.S., 2017. Consumer preference, antibacterial activity and genetic diversity of ginger (Zingiber officinale Roscoe) cultivars grown in Sri Lanka. Journal of Agricultural Sciences–Sri Lanka, 12(3).<a href="assets/pubs/2017a.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></li>
-    
-                <li>Gunarathne, W. A. L. N., <b>Sylvester, T.P.</b>, Madhukalpani, O. V. S., Dissanayake, D. R. R. P., Chamikara, M. D. M., & Sooriyapathirana, S. D. S. S., 2017. Characterization of lead and vine morphological diversity, phytochemical composition and antibacterial activity in the lead extracts of six Piper betle L. cultivars in Sri Lanka. Rajarata University Journal, 4(2):3-22<a href="assets/pubs/2017b.pdf" target="_blank" rel="noopener noreferrer"> PDF</a>
-                </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- More Information for BSc -->
+  <div id="bsc" class="timeline-info">
+    <button class="close-btn" onclick="closeInfo('bsc')">X</button>
+    <p><strong>BSc in Molecular Biology:</strong> University of Peradeniya, Sri Lanka (2011–2015)</p>
+    <p>Supervisor: Madhava Meegaskumbura</p>
+    <ul>
+      <li>Thesis: Phylogenetic relationships and species boundaries of a clade of diminutive shrub frogs (Rhacophoridae: Pseudophilautus)</li>
+      <!-- <li>Worked on a research project on protein expression in E. coli.</li> -->
+    </ul>
+  </div>
+</section>
 
-            <!-- <h4>2025</h4>
-            <ul>
-                <li>
-                    Lian, Q., Lu, Y., Xu, M., Huang, C., Ding, Q., Yang, X., <b>Sylvester, T.</b>, Shen, R., Miao, P. and Bai, M., 2025. Three mitochondrial genomes of Kibakoganea Nagai, 1984 (Coleoptera: Scarabaeidae: Rutelinae) and phylogenetic relationship of Rutelini. Journal of Asia-Pacific Entomology, p.102369. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1226861524001742?via%3Dihub" target="_blank" rel="noopener noreferrer">link</a>
-                </li>
-            </ul>
 
-            <h4>2024</h4>
-            <ul>
-                <li>
-                    Copeland, M., Landa, S., Owoyemi, A.O., Jonika, M.M., Alfieri, J.M., Johnston, J.S., <b>Sylvester, T.P.</b>, Kyre, B.R., Hoover, Z., Hjelmen, C.E. and Rieske, L.K., 2024. Genome assembly of the southern pine beetle (Dendroctonus frontalis Zimmerman) reveals the origins of gene content reduction in Dendroctonus. Royal Society Open Science, 11(12), p.240755. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsos.240755" target="_blank" rel="noopener noreferrer">open access</a>
-                </li>
-                <li>
-                    Adams, R., <b>Sylvester, T.</b>, Mitchell, R.F., Price, M.A., Shen, R. and McKenna, D.D., 2024. Functional and evolutionary insights into chemosensation and specialized herbivory from the genome of the red milkweed beetle, Tetraopes tetrophthalmus (Cerambycidae: Lamiinae). Journal of Heredity, p.esae049. <a href="https://academic.oup.com/jhered/advance-article-abstract/doi/10.1093/jhered/esae049/7745656" target="_blank" rel="noopener noreferrer">link</a>
-                </li>
-                <li>
-                    <b>Sylvester, T.</b>, Hoover, Z., Hjelmen, C.E., Jonika, M.M., Blackmon, L.T., Alfieri, J.M., Johnston, J.S., Chien, S., Esfandani, T. and Blackmon, H., 2024. A reference quality genome assembly for the jewel scarab Chrysina gloriosa. G3 Genes| Genomes| Genetics, 14(6). <a href="https://academic.oup.com/g3journal/article/14/6/jkae084/7648819" target="_blank" rel="noopener noreferrer">open access</a>
-                </li>
-                <li>
-                    Shen, R., <b>Sylvester, T.</b>, Shin, N.R., Zhan, Z., Jin, J., Yang, D., McKenna, D.D. and Liu, X., 2024. Chromosome-level genome assembly of the snakefly Mongoloraphidia duomilia (Raphidioptera: Raphidiidae). Scientific Data, 11(1), p.579. <a href="https://www.nature.com/articles/s41597-024-03439-1" target="_blank" rel="noopener noreferrer">open access</a>
-                </li>
-                <li>
-                    <b>Sylvester, T.</b>, Adams, R., Mitchell, R.F., Ray, A.M., Shen, R., Shin, N.R. and McKenna, D.D., 2024. Comparative analyses of the banded alder borer (Rosalia funebris) and Asian longhorned beetle (Anoplophora glabripennis) genomes reveal significant differences in genome architecture and gene content among these and other Cerambycidae. Journal of Heredity, p.esae021. <a href="https://academic.oup.com/jhered/article-abstract/115/5/516/7637438" target="_blank" rel="noopener noreferrer">link</a>
-                </li>
-                <li>
-                    <b>Sylvester, T.</b>, Adams, R., Hunter, W.B., Li, X., Rivera-Marchand, B., Shen, R., Shin, N.R. and McKenna, D.D., 2024. The genome of the invasive and broadly polyphagous Diaprepes root weevil, Diaprepes abbreviatus (Coleoptera), reveals an arsenal of putative polysaccharide-degrading enzymes. Journal of Heredity, 115(1), pp.94-102. <a href="https://academic.oup.com/jhered/article/115/1/94/7329554" target="_blank" rel="noopener noreferrer">link</a>
-                </li>
-            </ul>
+<section class="pub-highlights">
+      <h2>Latest Publications</h2>
+      <div class="carousel-container" id="pubCarousel">
+          <div class="carousel-slide">
+              <div class="pub-front-page"><img src="assets/images/Sylvester-2025-Neandra_Page_01.jpg" alt="Paper 1"></div>
+              <div class="pub-summary">
+                  <h3>Genomic architecture of the pole borer, Neandra brunnea (Cerambycidae: Parandrinae), sheds light on the evolution of wood-feeding in longhorn beetles</h3>
+                  <p>Neandra brunnea, commonly known as the pole borer, is a species of wood-boring (xylophagous) longhorn beetle (family Cerambycidae) found throughout most of eastern North America. We sequenced, assembled, and annotated the genome of N. brunnea and compared it to publicly available genomes of other Cerambycidae. The 1.23 Gb N. brunnea genome assembly was distributed across 78 contigs, with an N50 of 38.88 Mb and largest contig of 74.28 Mb. Most of the genome was comprised of repetitive sequences, with 81.39% comprising interspersed repeats. Most (99.7%) of the expected orthologous genes (BUSCOs) were present and fully assembled, with only 2.5% duplicated. The genome annotation identified 13 003 genes (15 574 transcripts), including 301 putative horizontally transferred loci from a diversity of both prokaryotic and eukaryotic donors. The assembled mitochondrial genome is relatively large at 17 kb and shows an unusual repeating array of d-loop segments. As the first representative of the longhorn beetle subfamily Parandrinae with a sequenced genome, N. brunnea provides an important new point of reference for the comparative study of beetle genomes and a further resource for studies of the evolution and genomic basis of xylophagy.</p>
+                  <a href="pages/publications.html" class="btn">Full Citation →</a>
+              </div>
+          </div>
+          <div class="carousel-slide">
+              <div class="pub-front-page"><img src="assets/images/Shen-2025.jpg" alt="Paper 2"></div>
+              <div class="pub-summary">
+                  <h3>Chromosome-level genome of the shining chafers Kibakoganea tamdaoensis (Coleoptera: Scarabaeidae: Rutelinae)</h3>
+                  <p>The beetle subfamily Rutelinae (shining leaf chafers) in the family Scarabaeidae is famous for its colorful body and phytophagous habitat. Among these shining leaf chafers, Kibakoganea tamdaoensis Miyake et Muramoto, 1992 is one with ornamental value because of their enlarged and horn-like mandibles. Here we generated high-quality genome assembly of KTAMD, integrating PacBio HiFi and Hi-C, and annotated with RNA sequence data. The resulting assembly is 605.37 Mb, of which 96.09% is anchored into 10 chromosomes. The scaffold N50 is 54.00 Mb, and BUSCO completeness is 96.6%. Repetitive elements span 49.43% of the genome. Our annotation pipeline identified 984 noncoding RNAs and predicted 12,945 protein-coding genes in the genome (96.40% BUSCO completeness). As the chromosome-scale genome from the subfamily Rutelinae, the KTAMD genome provides important new insights into scarabae genome evolution and provides a new vantage point from which to study the evolution of specialized beetles.</p>
+                  <a href="pages/publications.html" class="btn">Full Citation →</a>
+              </div>
+          </div>
+          <div class="carousel-slide">
+              <div class="pub-front-page"><img src="assets/images/Sylvester-2025-Neoclytus.jpg" alt="Paper 3"></div>
+              <div class="pub-summary">
+                  <h3>Insights into longhorn beetle (Cerambycidae) evolution from comparative analyses of the red-headed ash borer (Neoclytus acuminatus acuminatus) genome</h3>
+                  <p>Neoclytus acuminatus acuminatus, the red-headed ash borer, is a wood-boring longhorn beetle (Cerambycidae: Cerambycinae) native to North America and introduced in Eurasia and South America. Its larvae develop in dying or recently dead hardwood trees, including ecologically and economically significant species of ash, hickory, and oak. We sequenced, assembled, and annotated the genome of a female N. acuminatus and compared it to the publicly available genomes of other cerambycid species. The 508 Mb N. acuminatus genome assembly spanned 20 contigs (19 nuclear + 1 mitochondrial), with an N50 of 52.59 Mb and largest contig of 61.20 Mb. A moderately high fraction of the genome (62.63%) comprised repetitive sequences, with nearly all (99.4%) expected single-copy orthologous genes (BUSCOs) present and fully assembled. We identified 2 contigs as fragments of the N. acuminatus sex chromosome. Genome annotation identified 12,899 genes, including 109 putative horizontally transferred loci. Synteny analysis identified well-conserved blocks of collinearity between the N. acuminatus genome and other Cerambycidae. The genome contains a similar number of genes encoding putative plant cell wall degrading enzymes as other Cerambycidae. The N. acuminatus genome provides new insights into genome evolution in the family Cerambycidae, known for its rich diversity of xylophagous species, and provides a new viewpoint from which to study the evolution and genomic basis of traits such as wood-feeding and olfaction in beetles and other insects.</p>
+                  <a href="pages/publications.html" class="btn">Full Citation →</a>
+              </div>
+          </div>
+      </div>
+<div class="carousel-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+  </section>
+  </main>
 
-            <h4>2022</h4>
-            <ul>
-                <li>
-                    <b>Sylvester, T. P.</b> (2022). Broad-Scale Structural Evolution in Invertebrate Genomes and the Population Genomics of Jewel Scarabs in the Southwestern US (Doctoral dissertation, Texas A&M University). <a href="" target="_blank" rel="noopener noreferrer">link</a>
-                </li>
-                <li>
-                    Jonika, M. M., Alfieri, J. M.,<b> Sylvester, T.</b>, Buhrow, A. R., & Blackmon, H. (2022). Why not Y naught. Heredity, 1-4. <a href="https://www.nature.com/articles/s41437-022-00543-z" target="_blank" rel="noopener noreferrer">open access</a>
-                </li>
-            </ul>
-            
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <h1>Terrence Sylvester</h1>
+          <p class="subtitle">Postdoctoral Fellow | Evolution | Genomics | University of Memphis</p>
+          <p>Email: <a href="mailto:tpsylvst@memphis.edu">tpsylvst@memphis.edu</a></p>
+          <p>Department of Biology</p>
+          <p>Ellington Hall, Room 321</p>
+          <p>University of Memphis</p>
+          <p>Memphis, TN 38152</p>
+        </div>
 
-            <h4>2020</h4>
-            <ul>
-                <li><b>Sylvester, T.</b>, Hjelmen, C.E., Hanrahan, S.J., Lenhart, P.A., Johnston, J.S. and Blackmon, H., 2020. Lineage-specific patterns of chromosome evolution are the rule not the exception in Polyneoptera insects. Proceedings of the Royal Society B, 287(1935), p.20201388. <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2020.1388" target="_blank" rel="noopener noreferrer">open access</a></li>
-            </ul>
+        <div class="footer-right">
+          <h2>Connect</h2>
+          <div class="social-grid">
+            <a href="https://www.linkedin.com/in/terrence-sylvester/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=ReSUlxsAAAAJ&hl=en" aria-label="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.researchgate.net/profile/Terrence-Sylvester?ev=hdr_xprf" aria-label="ResearchGate" target="_blank"><i class="fab fa-researchgate"></i></a>
+            <a href="https://github.com/Tsylvester8" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://orcid.org/0000-0001-6683-0793" aria-label="ORCID" target="_blank"><i class="fab fa-orcid"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Terrence Sylvester. All rights reserved.</p>
+    </footer>
 
-            <h4>2017</h4>
-            <ul>
-                <li>
-                    Sendanayake, L., <b>Sylvester, T.</b>, De Silva, U.H.A.J., Dissanayake, D.R.R.P., Daundasekera, D.M.K.C. and Sooriyapathirana, S.D.S.S., 2017. Consumer preference, antibacterial activity and genetic diversity of ginger (Zingiber officinale Roscoe) cultivars grown in Sri Lanka. Journal of Agricultural Sciences–Sri Lanka, 12(3).<a href="assets/pubs/2017a.pdf" target="_blank" rel="noopener noreferrer"> PDF</a>
-                </li>
-    
-                <li>
-                    Gunarathne, W. A. L. N., <b>Sylvester, T.P.</b>, Madhukalpani, O. V. S., Dissanayake, D. R. R. P., Chamikara, M. D. M., & Sooriyapathirana, S. D. S. S., 2017. Characterization of lead and vine morphological diversity, phytochemical composition and antibacterial activity in the lead extracts of six Piper betle L. cultivars in Sri Lanka. Rajarata University Journal, 4(2):3-22<a href="assets/pubs/2017b.pdf" target="_blank" rel="noopener noreferrer"> PDF</a>
-                </li>
-            </ul> -->
-        </section>
-
-        <!-- contact -->
-         <section id="contact" class="section">
-            <h1>
-                Contact
-            </h1>
-            <p>
-                Email:<a href="mailto:tpsylvst@memphis.edu">tpsylvst@memphis.edu</a>
-            </p>
-         </section>
-    </body>
+    <script src="/assets/scripts/scripts.js"></script>
+  </body>
 </html>
+
+
+<!-- deprecated -->
+ 
+    <!-- <nav class="main-nav">
+          <div class="nav-inner"> -->
+              <!-- <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button> -->
+              <!-- <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="research.html">Research</a></li>
+                  <li><a href="publications.html">Publications</a></li>
+                  <li><a href="cv.html">CV</a></li>
+                  <li><button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+              </ul>
+          </div>
+      </nav> -->
+
+
+      <!-- <section class="hero">
+          <div class="hero-mobile">
+              <div class="hero-slide">Publication Image</div>
+              <div class="hero-slide">Speaking Image</div>
+              <div class="hero-slide">Lab Image</div>
+              <div class="hero-slide">Fieldwork Image</div>
+          </div>
+          <div class="hero-desktop">
+              <div class="panel p1"></div>
+              <div class="panel p2"></div>
+              <div class="panel p3"></div>
+              <div class="panel p4"></div>
+          </div>
+      </section> -->
+
+      <!-- <main class="container">
+          <section class="hero-grid">
+              <div class="hero-card" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_DiplAbekOADEoX716qpk-xwOq6I4w0Pqeo1yk59kCUadKyiqfNv_ix6q894l-i6VzpjA0m4UdrxOhh0MF0Ewya08fJ6rXsrZZ0Fr_TO4nWzMXQDhK0Pb_sZ1ulob98ASoIdeorfxoepd5M_GKHFeb25KIs2LRuSo1dvkhp0j92Bdx2VXyhmpaMlfqKLnfHx1EFELfXqu_qedKpdQwzbmJmjIW7ZyVZZKscc6T0GFsRG01XQdfXHpPUsczHPY6U1squDKzly6DLI')">
+          <div class="overlay">
+            <h3>Lab Work</h3>
+            <p>In-vitro experimentation and sample preparation.</p>
+          </div>
+        </div>
+
+        <div class="hero-card" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-UdHy0Jkhu0LOLEah90Paom99Ym9I-ijn5w8Tzwl1gPE45Kg-W7aByoZprw2JhQtDmvgDR2rINaWWj1rWYWTHtDgFRYu7g3KHtegIulMCDDd98xk8Y-AQ9G0EzP9z1MvtE1ARCjYaEQcUOg5OFu7F99VUclpMhDgj39YFeGycapLiVo4cBFrJCSzHj3e_HXOe3u4eTwyATbIJk3Qco2mFplmZqDPIJO42lu2jfP9MwNRbyGsUmQfurIWnRHv5LlKTtfJ8lUP1FNs')">
+          <div class="overlay">
+            <h3>DNA Sequencing</h3>
+            <p>Next-generation sequencing analysis.</p>
+          </div>
+        </div>
+
+        <div class="hero-card" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0pqfj3kdEQ8prDw4PyMhugB4F6eBZ5NHox9vBf2OgvoruQMNwVEMKcwSzQ8_gt9P-ARhTT-lnKlFcMjYl76mDMgfeUK8_ywPQAgr85-kSfFj_h37Cp7uwWHMnVYg3xjreaKSPAH6usWDeCLB7g2hYlX-20lfWBh764zl3jbci0z1V3ybh2fpLkqsP1YW1IZ7rwDb5eROSQuCQ7V-9zKGEmb-xsmJ_OI69odr47MwEIkNwP25O1O7N0oS0rftglqTbIiZnsyrUnjw')">
+          <div class="overlay">
+            <h3>Field Work</h3>
+            <p>Sample collection in diverse ecosystems.</p>
+          </div>
+        </div>
+
+        <div class="hero-card" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdI9V4_svhZItJZvuo8OnQ5o-vYLw0ZfdbCaOMk_lfcyp4QDjJtXFJTgZ6IFx7HK5gRbPwxE45SK8C0QCwkpISSU7Uz9c90iKmvMkiErY8_XiNuqnju3gE7rmq7gzJ8icmk1gTap3PbaDcnADKjJX_lb2eer9eB1mJ1Voh8N7qISYk1g3rtWnqD1o-FPXu1CKWurmrl67221OJpsHzQk7JOYhWKa3gzsko-xUpp8Mffx7CQMFkO3vz68amBfIG0DdwMzxDcv4R-Hc')">
+          <div class="overlay">
+            <h3>Computational</h3>
+            <p>Phylogenetic modeling and data science.</p>
+          </div>
+        </div>
+      </section>
+      </main> -->
+
+              <!-- Contact -->
+
+
+            <!-- <main class="container">
+                <section class="bio-section">
+                    <div class="bio-grid">
+                        <div class="profile-container">
+                            <img src="/assets/images/profile-img.jpg" alt="Terrence Sylvester" class="profile-pic">
+                        </div>
+                        <div class="bio-text">
+                            <h2>Biography</h2>
+                            <p>Enter your professional narrative here, describing your journey from your PhD to your current Postdoc position.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="interests">
+                    <h2>Research Interests</h2>
+                    <p><strong>Genomic Adaptation:</strong> Detailed explanation of your research focus on how lineages evolve and adapt at a genomic level.</p>
+                </section>
+
+                <section class="pub-highlights">
+                    <h2>Latest Publications</h2>
+                    <div class="carousel-container" id="pubCarousel">
+                        <div class="carousel-slide">
+                            <div class="pub-front-page"><img src="paper1-thumb.jpg" alt="Paper 1"></div>
+                            <div class="pub-summary">
+                                <h3>Genomic Insights into Lineage A</h3>
+                                <p>Summary of findings and abstract snippet for the first featured paper.</p>
+                                <a href="publications.html" class="btn-small">Full Citation →</a>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="pub-front-page"><img src="paper2-thumb.jpg" alt="Paper 2"></div>
+                            <div class="pub-summary">
+                                <h3>Evolutionary Trends in Genomics</h3>
+                                <p>A concise summary of the methodology and key discoveries in the second paper.</p>
+                                <a href="publications.html" class="btn-small">Full Citation →</a>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="pub-front-page"><img src="paper3-thumb.jpg" alt="Paper 3"></div>
+                            <div class="pub-summary">
+                                <h3>Comparative Genomic Analysis</h3>
+                                <p>Abstract snippet highlighting the results of the third major publication.</p>
+                                <a href="publications.html" class="btn-small">Full Citation →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="scrollToSlide(0)"></span>
+                        <span class="dot" onclick="scrollToSlide(1)"></span>
+                        <span class="dot" onclick="scrollToSlide(2)"></span>
+                    </div>
+                </section>
+
+                <section class="education">
+                    <h2>Education & Experience</h2>
+                    <ul class="timeline">
+                        <li><strong>Postdoc:</strong> Institution Name (Year–Present)</li>
+                        <li><strong>PhD:</strong> Evolution & Genomics (Year–Year)</li>
+                        <li><strong>BSc:</strong> Biological Sciences (Year–Year)</li>
+                    </ul>
+                </section>
+            </main> -->
+
+                  <!-- Publication -->
+      <!-- <section id="publications" class="publications">
+        <h2>Latest Publications</h2>
+        <div class="publication-list">
+          <div class="publication-item">
+            <h3>Genomic Insights into Lineage A</h3>
+            <p>Summary of findings and abstract snippet for the first featured paper.</p>
+            <a href="publications.html" class="btn-small">Full Citation →</a>
+          </div>
+          <div class="publication-item">
+            <h3>Evolutionary Trends in Genomics</h3>
+            <p>A concise summary of the methodology and key discoveries in the second paper.</p>
+            <a href="publications.html" class="btn-small">Full Citation →</a>
+          </div>
+          <div class="publication-item">
+            <h3>Comparative Genomic Analysis</h3>
+            <p>Abstract snippet highlighting the results of the third major publication.</p>
+            <a href="publications.html" class="btn-small">Full Citation →</a>
+          </div>
+        </div>
+      </section> -->
